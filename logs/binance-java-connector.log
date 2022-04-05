@@ -1,0 +1,108 @@
+2022-04-05 17:46:48.517[1649152008517] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74401 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 17:46:48.519[1649152008519] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 17:46:48.891[1649152008891] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 17:46:49.550[1649152009550] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:46:49.554[1649152009554] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:46:49.662[1649152009662] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 17:46:49.809[1649152009809] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 1.49 seconds (JVM running for 2.193)
+2022-04-05 17:46:50.350[1649152010350] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 17:46:50.350[1649152010350] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
+2022-04-05 17:47:16.438[1649152036438] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74413 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 17:47:16.440[1649152036440] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 17:47:16.823[1649152036823] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 17:47:17.321[1649152037321] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:47:17.325[1649152037325] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:47:17.427[1649152037427] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 17:47:17.572[1649152037572] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 1.318 seconds (JVM running for 2.014)
+2022-04-05 17:47:18.100[1649152038100] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 17:47:18.101[1649152038101] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
+2022-04-05 17:47:36.313[1649152056313] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74418 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 17:47:36.315[1649152056315] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 17:47:36.669[1649152056669] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 17:47:37.150[1649152057150] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:47:37.153[1649152057153] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:47:37.265[1649152057265] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 17:47:37.390[1649152057390] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 1.244 seconds (JVM running for 2.103)
+2022-04-05 17:47:37.882[1649152057882] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 17:47:37.882[1649152057882] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
+2022-04-05 17:47:58.843[1649152078843] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74429 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 17:47:58.845[1649152078845] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 17:47:59.461[1649152079461] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 17:48:00.116[1649152080116] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:48:00.120[1649152080120] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:48:00.225[1649152080225] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 17:48:00.367[1649152080367] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 1.705 seconds (JVM running for 2.355)
+2022-04-05 17:48:00.815[1649152080815] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 17:48:00.815[1649152080815] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
+2022-04-05 17:48:34.230[1649152114230] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74456 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 17:48:34.231[1649152114231] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 17:48:34.863[1649152114863] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-04-05 17:48:34.869[1649152114869] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-05 17:48:34.869[1649152114869] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-04-05 17:48:34.870[1649152114870] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-05 17:48:34.927[1649152114927] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-04-05 17:48:34.927[1649152114927] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 665 ms
+2022-04-05 17:48:35.045[1649152115045] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 17:48:35.532[1649152115532] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:48:35.535[1649152115535] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:48:35.637[1649152115637] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 17:48:35.787[1649152115787] | INFO  | main       | o.s.b.a.e.web.EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-05 17:48:35.808[1649152115808] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-05 17:48:35.822[1649152115822] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-05 17:48:35.835[1649152115835] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 1.771 seconds (JVM running for 3.087)
+2022-04-05 17:48:36.127[1649152116127] | INFO  | RMI TCP Connection(1)-127.0.0.1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-05 17:48:36.128[1649152116128] | INFO  | RMI TCP Connection(1)-127.0.0.1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-04-05 17:48:36.129[1649152116129] | INFO  | RMI TCP Connection(1)-127.0.0.1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2022-04-05 17:48:36.276[1649152116276] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 17:48:36.276[1649152116276] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
+2022-04-05 17:52:40.216[1649152360216] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74558 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 17:52:40.219[1649152360219] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 17:52:40.966[1649152360966] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-04-05 17:52:40.972[1649152360972] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-05 17:52:40.973[1649152360973] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-04-05 17:52:40.973[1649152360973] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-05 17:52:41.031[1649152361031] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-04-05 17:52:41.031[1649152361031] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 764 ms
+2022-04-05 17:52:41.154[1649152361154] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 17:52:42.951[1649152362951] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:52:42.955[1649152362955] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:52:43.246[1649152363246] | INFO  | main       | o.s.b.a.e.web.EndpointLinksResolver  - Exposing 5 endpoint(s) beneath base path '/actuator'
+2022-04-05 17:52:43.268[1649152363268] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-05 17:52:43.283[1649152363283] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-05 17:52:43.296[1649152363296] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 3.302 seconds (JVM running for 4.067)
+2022-04-05 17:52:43.430[1649152363430] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 17:52:43.679[1649152363679] | INFO  | RMI TCP Connection(3)-192.168.31.153 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-05 17:52:43.679[1649152363679] | INFO  | RMI TCP Connection(3)-192.168.31.153 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-04-05 17:52:43.680[1649152363680] | INFO  | RMI TCP Connection(3)-192.168.31.153 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2022-04-05 17:52:43.700[1649152363700] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 17:52:43.700[1649152363700] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
+2022-04-05 17:56:35.344[1649152595344] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74671 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 17:56:35.346[1649152595346] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 17:56:36.095[1649152596095] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-04-05 17:56:36.100[1649152596100] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-05 17:56:36.101[1649152596101] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-04-05 17:56:36.101[1649152596101] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-05 17:56:36.161[1649152596161] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-04-05 17:56:36.161[1649152596161] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 778 ms
+2022-04-05 17:56:36.290[1649152596290] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 17:56:36.903[1649152596903] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:56:36.907[1649152596907] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 17:56:37.004[1649152597004] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 17:56:37.285[1649152597285] | INFO  | main       | o.s.b.a.e.web.EndpointLinksResolver  - Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-05 17:56:37.308[1649152597308] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-04-05 17:56:37.322[1649152597322] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-05 17:56:37.334[1649152597334] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 2.195 seconds (JVM running for 2.881)
+2022-04-05 17:56:37.713[1649152597713] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 17:56:37.713[1649152597713] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
+2022-04-05 17:56:37.742[1649152597742] | INFO  | RMI TCP Connection(2)-127.0.0.1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-05 17:56:37.742[1649152597742] | INFO  | RMI TCP Connection(2)-127.0.0.1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-04-05 17:56:37.743[1649152597743] | INFO  | RMI TCP Connection(2)-127.0.0.1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2022-04-05 18:04:20.794[1649153060794] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Starting BalanceMonitorApplication using Java 17.0.2 on shanzhenlongdeMacBook-Pro.local with PID 74876 (/Users/shanzhenlong/IdeaProjects/binance-api/balance-monitor/target/classes started by shanzhenlong in /Users/shanzhenlong/IdeaProjects/binance-api)
+2022-04-05 18:04:20.795[1649153060795] | INFO  | main       | c.s.b.BalanceMonitorApplication      - No active profile set, falling back to 1 default profile: "default"
+2022-04-05 18:04:21.089[1649153061089] | INFO  | main       | c.b.c.client.utils.RequestHandler    - POST https://api.binance.com/api/v3/userDataStream
+2022-04-05 18:04:21.701[1649153061701] | INFO  | main       | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connecting to stream.binance.com/ws/r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 18:04:21.705[1649153061705] | INFO  | binance-listen-key-refresher | c.b.c.client.utils.RequestHandler    - PUT https://api.binance.com/api/v3/userDataStream?listenKey=r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI
+2022-04-05 18:04:21.749[1649153061749] | INFO  | main       | c.s.b.BalanceMonitorApplication      - Started BalanceMonitorApplication in 1.154 seconds (JVM running for 1.946)
+2022-04-05 18:04:21.812[1649153061812] | INFO  | binance-listen-key-refresher | c.s.b.socket.BalanceMonitorSocket$1  - extendListenKey [r2k8fL2qJdylqh7kLfPxZy0pCv1sFtoYxOgwdsV2nL4hUFiQN6TszuIR0KMI] [{}]
+2022-04-05 18:04:22.472[1649153062472] | INFO  | OkHttp https://stream.binance.com:9443/... | c.b.c.c.utils.WebSocketConnection    - [Connection 1] Connected to Server
+2022-04-05 18:04:22.473[1649153062473] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - info webSocket callback [null]
