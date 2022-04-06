@@ -30,6 +30,10 @@ public record BalanceMonitorSocket(WebsocketClient websocketClient,
                                    List<INotificationService> notificationServices,
                                    Market market) {
     /**
+     * USDT
+     */
+    private static final String USDT = "USDT";
+    /**
      * info socket handler
      */
     private static final WebSocketCallback INFO_WEB_SOCKET_CALLBACK = data -> Log.get().info("info webSocket callback [{}]", data);
@@ -86,6 +90,7 @@ public record BalanceMonitorSocket(WebsocketClient websocketClient,
                 INFO_WEB_SOCKET_CALLBACK,
                 data -> {
                     try {
+                        Log.get().info("received message [{}]", data);
                         JSONObject message = JSONUtil.parseObj(data);
                         if (EVENT_NAME.equals(message.getStr("e"))) {
                             String asset = message.getStr("a");
@@ -115,7 +120,10 @@ public record BalanceMonitorSocket(WebsocketClient websocketClient,
      * get usdt price
      */
     private BigDecimal getUsdtPrice(String asset) {
-        String symbol = StrUtil.concat(false, asset, "USDT");
+        if (USDT.equals(asset)) {
+            return BigDecimal.ONE;
+        }
+        String symbol = StrUtil.concat(false, asset, USDT);
         try {
             return JSONUtil.parseObj(
                             market.tickerSymbol(
