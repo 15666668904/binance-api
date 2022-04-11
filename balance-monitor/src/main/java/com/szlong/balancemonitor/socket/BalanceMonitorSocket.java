@@ -57,32 +57,47 @@ public record BalanceMonitorSocket(WebsocketClient websocketClient,
      * format
      */
     private static final String FORMAT = ",##0.00";
+    /**
+     * listen key
+     */
+    private static String listenKey = StrUtil.EMPTY;
+    /**
+     * timer
+     */
+    private static final Timer TIMER = new Timer("binance-listen-key-refresher", true);
+
+    private void createRefreshListenKeyJob() {
+        TIMER.scheduleAtFixedRate(
+                new TimerTask() {
+                    @Override
+                    public void run() {
+                        try {
+                            Log.get()
+                                    .info(
+                                            "extendListenKey [{}] [{}]",
+                                            listenKey,
+                                            userData.extendListenKey(new LinkedHashMap<>() {{
+                                                put("listenKey", listenKey);
+                                            }})
+                                    );
+                        } catch (Exception e) {
+                            Log.get().error("refresh listenKey [{}] err", listenKey, e);
+                        }
+                    }
+                },
+                0L,
+                20L * 1000L * 60L
+        );
+    }
 
     @PostConstruct
     public void init() {
-        String listenKey = JSONUtil.parseObj(userData.createListenKey()).getStr("listenKey");
-        new Timer("binance-listen-key-refresher")
-                .scheduleAtFixedRate(
-                        new TimerTask() {
-                            @Override
-                            public void run() {
-                                try {
-                                    Log.get()
-                                            .info(
-                                                    "extendListenKey [{}] [{}]",
-                                                    listenKey,
-                                                    userData.extendListenKey(new LinkedHashMap<>() {{
-                                                        put("listenKey", listenKey);
-                                                    }})
-                                            );
-                                } catch (Exception e) {
-                                    Log.get().error("refresh listenKey [{}] err", listenKey, e);
-                                }
-                            }
-                        },
-                        0L,
-                        20L * 1000L * 60L
-                );
+        //服务启动 首次运行时 创建一个job刷新listenKey
+        boolean needSchedule = listenKey.equals(StrUtil.EMPTY);
+        listenKey = JSONUtil.parseObj(userData.createListenKey()).getStr("listenKey");
+        if (needSchedule) {
+            createRefreshListenKeyJob();
+        }
         //2022-04-04 18:20:09.194[1649067609194] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - onReceive [{"e":"balanceUpdate","E":1649067609172,"a":"BNB","d":"-1.00000000","T":1649067609171}]
         //2022-04-04 18:20:09.195[1649067609195] | INFO  | OkHttp https://stream.binance.com:9443/... | c.s.b.socket.BalanceMonitorSocket    - onReceive [{"e":"outboundAccountPosition","E":1649067609172,"u":1649067609171,"B":[{"a":"BNB","f":"12.02098209","l":"0.00000000"}]}]
         websocketClient.listenUserStream(
@@ -111,7 +126,11 @@ public record BalanceMonitorSocket(WebsocketClient websocketClient,
                     }
                 }
                 ,
-                INFO_WEB_SOCKET_CALLBACK,
+                data -> {
+                    Log.get().info("onClosingCallback [{}]", data);
+                    // reinit
+                    init();
+                },
                 INFO_WEB_SOCKET_CALLBACK
         );
     }
